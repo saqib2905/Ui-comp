@@ -1,0 +1,44 @@
+import { Meta, ArgsTable, Canvas, Story } from '@storybook/addon-docs/blocks';
+import Icon from './Icon';
+import IconTypes from './Icon.types';
+
+<Meta title="Iconography/Icon" />
+
+<Story name="Import" />
+
+# Icon
+
+Icons symbolize common actions, features, and themes throughout our app.
+
+Icons are powerful visual helpers and should be used with care. Overuse quickly results in user interfaces that are visually overwhelming or distracting.
+
+Icons are commonly used:
+
+- in primary navigation
+- in page headers and section titles
+- in alerts to bring attention to a specific theme (such as an announcement or an error)
+- inline with text to add clarity
+- to direct a user’s attention to something they can take action on, or which results in an action
+
+## Import
+
+```jsx
+import { Icon } from '@tbe-ui/components';
+```
+
+<Canvas>
+  <Story name="Usage">
+    <>
+      {/* <Icon size={12} icon={'add'} />
+      <Icon icon={'add'} />
+      <Icon size={12} icon={'plus'} />
+      <Icon icon={'plus'} /> */}
+    </>
+  </Story>
+</Canvas>
+
+<Story name="Props" />
+
+## Props
+
+<ArgsTable of={IconTypes} />
